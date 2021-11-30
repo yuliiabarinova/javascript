@@ -40,11 +40,11 @@
 
     // -- замініть текст параграфа з id 'content' на будь-який інший
     let contentElement = document.getElementById('content');
-    contentElement.innerHTML = '<div>Lorem ipsum dolor sit amet.</div>'
+    contentElement.innerText = 'shdfhjvdsjv';
     // -- замініть текст параграфа з id 'rules' на будь-який інший
 
     let rulesElement = document.getElementById('rules');
-    rulesElement.innerHTML = '<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, sit?</div>'
+    rulesElement.innerText = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, sit?'
 
     // -- змініть кожному елементу колір фону на червоний
     let eachElement = document.body.children;
@@ -60,8 +60,8 @@
         body.style.color = 'blue';
     }
     // -- отримати весь список класів елемента з id=rules і вивести їх в console.log
-    let classList = document.getElementById('rules')
-    console.log (classList)
+    let item = document.getElementById('rules');
+    console.log (item.classList);
     // -- поміняти колір тексту у всіх елементів fc_rules на червоний
     let xxx = document.getElementsByClassName('fc_rules')
     for (const fc_rules of xxx) {
