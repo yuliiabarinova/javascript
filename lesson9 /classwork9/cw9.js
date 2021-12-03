@@ -40,8 +40,8 @@ let simpsons = [
 for (const element of simpsons) {
     let divElement = document.createElement('div');
     divElement.classList.add('member');
-    divElement.innerText = `${element.name} ${element.surname} ${element.age}`
     document.body.appendChild(divElement);
+}
 }
 // - взяти попередній масив з сімпсонами.
 //     Проітерувати його, створиши для кожного елементу масиву <div class='member'>.
