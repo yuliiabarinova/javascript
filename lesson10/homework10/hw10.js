@@ -45,7 +45,10 @@ for (const comment of comments) {
     let commentBody = document.createElement('div');
     commentBody.innerText = comment.body;
     let button3 = document.createElement('button')
-    button3.innerText= ('hide')
+    button3.innerText = ('hide');
+    button3.onclick = function () {
+        commentBody.classList.toggle('hide')
+    }
 
     commentDiv.append(title,commentBody, button3);
     document.body.append(commentDiv);
